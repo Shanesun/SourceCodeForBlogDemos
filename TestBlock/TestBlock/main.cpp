@@ -106,8 +106,6 @@ struct __AtAutoreleasePool {
 };
 
 #define __OFFSETOFIVAR__(TYPE, MEMBER) ((long long) &((TYPE *)0)->MEMBER)
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_mn_hr_rqjtx1n72sk2ry6185zxc0000gn_T_main_2e1160_mi_0 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"newObj",6};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_mn_hr_rqjtx1n72sk2ry6185zxc0000gn_T_main_2e1160_mi_1 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"startObj",8};
 
 
 
@@ -98273,17 +98271,20 @@ typedef void (*NSUserAutomatorTaskCompletionHandler)(id _Nullable result, NSErro
 
 
 
-
-static int outTmpVal = 30;
-
+struct __Block_byref_val_0 {
+  void *__isa;
+__Block_byref_val_0 *__forwarding;
+ int __flags;
+ int __size;
+ int val;
+};
 
 struct __main_block_impl_0 {
   struct __block_impl impl;
   struct __main_block_desc_0* Desc;
-  int tmpVal;
-  int *localTmpVal;
-  NSMutableArray *localMutArray;
-  __main_block_impl_0(void *fp, struct __main_block_desc_0 *desc, int _tmpVal, int *_localTmpVal, NSMutableArray *_localMutArray, int flags=0) : tmpVal(_tmpVal), localTmpVal(_localTmpVal), localMutArray(_localMutArray) {
+  __Block_byref_val_0 *val; // by ref
+    
+  __main_block_impl_0(void *fp, struct __main_block_desc_0 *desc, __Block_byref_val_0 *_val, int flags=0) : val(_val->__forwarding) {
     impl.isa = &_NSConcreteStackBlock;
     impl.Flags = flags;
     impl.FuncPtr = fp;
@@ -98291,20 +98292,17 @@ struct __main_block_impl_0 {
   }
 };
 static void __main_block_func_0(struct __main_block_impl_0 *__cself) {
-  int tmpVal = __cself->tmpVal; // bound by copy
-  int *localTmpVal = __cself->localTmpVal; // bound by copy
-  NSMutableArray *localMutArray = __cself->localMutArray; // bound by copy
+  __Block_byref_val_0 *val = __cself->val; // bound by ref
 
-        printf("val = %d\n", tmpVal);
-        printf("localTmpVal = %d\n", (*localTmpVal));
-        printf("outTmpVal = %d\n", outTmpVal);
-
-        ((void (*)(id, SEL, ObjectType _Nonnull))(void *)objc_msgSend)((id)localMutArray, sel_registerName("addObject:"), (id _Nonnull)(NSString *)&__NSConstantStringImpl__var_folders_mn_hr_rqjtx1n72sk2ry6185zxc0000gn_T_main_2e1160_mi_0);
-        printf("localMutArray.count = %d\n", (int)((NSUInteger (*)(id, SEL))(void *)objc_msgSend)((id)localMutArray, sel_registerName("count")));
+        (val->__forwarding->val) = 1;
+        printf("val = %d", (val->__forwarding->val));
     }
-static void __main_block_copy_0(struct __main_block_impl_0*dst, struct __main_block_impl_0*src) {_Block_object_assign((void*)&dst->localMutArray, (void*)src->localMutArray, 3/*BLOCK_FIELD_IS_OBJECT*/);}
+static void __main_block_copy_0(struct __main_block_impl_0*dst, struct __main_block_impl_0*src) {
+    _Block_object_assign((void*)&dst->val, (void*)src->val, 8/*BLOCK_FIELD_IS_BYREF*/);
+    
+}
 
-static void __main_block_dispose_0(struct __main_block_impl_0*src) {_Block_object_dispose((void*)src->localMutArray, 3/*BLOCK_FIELD_IS_OBJECT*/);}
+static void __main_block_dispose_0(struct __main_block_impl_0*src) {_Block_object_dispose((void*)src->val, 8/*BLOCK_FIELD_IS_BYREF*/);}
 
 static struct __main_block_desc_0 {
   size_t reserved;
@@ -98313,16 +98311,9 @@ static struct __main_block_desc_0 {
   void (*dispose)(struct __main_block_impl_0*);
 } __main_block_desc_0_DATA = { 0, sizeof(struct __main_block_impl_0), __main_block_copy_0, __main_block_dispose_0};
 int main(int argc, char * argv[]) {
-    int tmpVal = 10;
-    static int localTmpVal = 20;
-    NSMutableArray *localMutArray = ((NSMutableArray *(*)(id, SEL))(void *)objc_msgSend)((id)objc_getClass("NSMutableArray"), sel_registerName("new"));
+    __attribute__((__blocks__(byref))) __Block_byref_val_0 val = {(void*)0,(__Block_byref_val_0 *)&val, 0, sizeof(__Block_byref_val_0), 10};
+    void (*blk)(void) = ((void (*)())&__main_block_impl_0((void *)__main_block_func_0, &__main_block_desc_0_DATA, (__Block_byref_val_0 *)&val, 570425344));
 
-    void (*blk)(void) = ((void (*)())&__main_block_impl_0((void *)__main_block_func_0, &__main_block_desc_0_DATA, tmpVal, &localTmpVal, localMutArray, 570425344));
-
-    tmpVal = 2;
-    localTmpVal = 21;
-    outTmpVal = 31;
-    ((void (*)(id, SEL, ObjectType _Nonnull))(void *)objc_msgSend)((id)localMutArray, sel_registerName("addObject:"), (id _Nonnull)(NSString *)&__NSConstantStringImpl__var_folders_mn_hr_rqjtx1n72sk2ry6185zxc0000gn_T_main_2e1160_mi_1);
     ((void (*)(__block_impl *))((__block_impl *)blk)->FuncPtr)((__block_impl *)blk);
 }
 static struct IMAGE_INFO { unsigned version; unsigned flag; } _OBJC_IMAGE_INFO = { 0, 2 };
