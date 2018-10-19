@@ -98298,11 +98298,13 @@ static void __main_block_func_0(struct __main_block_impl_0 *__cself) {
         printf("val = %d", (val->__forwarding->val));
     }
 static void __main_block_copy_0(struct __main_block_impl_0*dst, struct __main_block_impl_0*src) {
-    _Block_object_assign((void*)&dst->val, (void*)src->val, 8/*BLOCK_FIELD_IS_BYREF*/);
+    _Block_object_assign(&dst->val, (void*)src->val, 8/*BLOCK_FIELD_IS_BYREF*/);
     
 }
 
-static void __main_block_dispose_0(struct __main_block_impl_0*src) {_Block_object_dispose((void*)src->val, 8/*BLOCK_FIELD_IS_BYREF*/);}
+static void __main_block_dispose_0(struct __main_block_impl_0*src) {
+    _Block_object_dispose((void*)src->val, 8/*BLOCK_FIELD_IS_BYREF*/);
+}
 
 static struct __main_block_desc_0 {
   size_t reserved;
