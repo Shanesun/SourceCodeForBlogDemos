@@ -8,24 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		3463CAA221774EE4004BDCF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3463CAA121774EE4004BDCF2 /* AppDelegate.m */; };
-		3463CAA521774EE4004BDCF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3463CAA421774EE4004BDCF2 /* ViewController.m */; };
 		3463CAA821774EE4004BDCF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3463CAA621774EE4004BDCF2 /* Main.storyboard */; };
 		3463CAAA21774EE7004BDCF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3463CAA921774EE7004BDCF2 /* Assets.xcassets */; };
 		3463CAAD21774EE7004BDCF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3463CAAB21774EE7004BDCF2 /* LaunchScreen.storyboard */; };
 		3463CAB021774EE7004BDCF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3463CAAF21774EE7004BDCF2 /* main.m */; };
+		346B4D25218309D5001543BF /* TestCatchVars.m in Sources */ = {isa = PBXBuildFile; fileRef = 346B4D24218309D5001543BF /* TestCatchVars.m */; };
+		346B4D2821830A26001543BF /* Test__block.m in Sources */ = {isa = PBXBuildFile; fileRef = 346B4D2721830A26001543BF /* Test__block.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3463CA9D21774EE4004BDCF2 /* TestBlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestBlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3463CAA021774EE4004BDCF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3463CAA121774EE4004BDCF2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3463CAA321774EE4004BDCF2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3463CAA421774EE4004BDCF2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3463CAA721774EE4004BDCF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3463CAA921774EE7004BDCF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3463CAAC21774EE7004BDCF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3463CAAE21774EE7004BDCF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3463CAAF21774EE7004BDCF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		346B4D23218309D5001543BF /* TestCatchVars.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCatchVars.h; sourceTree = "<group>"; };
+		346B4D24218309D5001543BF /* TestCatchVars.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCatchVars.m; sourceTree = "<group>"; };
+		346B4D2621830A26001543BF /* Test__block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test__block.h; sourceTree = "<group>"; };
+		346B4D2721830A26001543BF /* Test__block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test__block.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +63,15 @@
 			children = (
 				3463CAA021774EE4004BDCF2 /* AppDelegate.h */,
 				3463CAA121774EE4004BDCF2 /* AppDelegate.m */,
-				3463CAA321774EE4004BDCF2 /* ViewController.h */,
-				3463CAA421774EE4004BDCF2 /* ViewController.m */,
 				3463CAA621774EE4004BDCF2 /* Main.storyboard */,
 				3463CAA921774EE7004BDCF2 /* Assets.xcassets */,
 				3463CAAB21774EE7004BDCF2 /* LaunchScreen.storyboard */,
 				3463CAAE21774EE7004BDCF2 /* Info.plist */,
 				3463CAAF21774EE7004BDCF2 /* main.m */,
+				346B4D23218309D5001543BF /* TestCatchVars.h */,
+				346B4D24218309D5001543BF /* TestCatchVars.m */,
+				346B4D2621830A26001543BF /* Test__block.h */,
+				346B4D2721830A26001543BF /* Test__block.m */,
 			);
 			path = TestBlock;
 			sourceTree = "<group>";
@@ -141,8 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3463CAA521774EE4004BDCF2 /* ViewController.m in Sources */,
 				3463CAB021774EE7004BDCF2 /* main.m in Sources */,
+				346B4D2821830A26001543BF /* Test__block.m in Sources */,
+				346B4D25218309D5001543BF /* TestCatchVars.m in Sources */,
 				3463CAA221774EE4004BDCF2 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
