@@ -69,7 +69,7 @@ NSArray* exampleD_getBlockArray() {
     
     // 只有第一个Block被Copy到堆上，其他依旧在栈上，超过作用域释放。指针变成野指针。
     // 这里为什么只有第一个Block会被复制到堆上，猜测可能和initWithObjects:实现形式有关系。
-    return [[NSArray alloc] initWithObjects:^{NSLog(@"blk1:%d",val);}, ^{NSLog(@"blk0:%d",val);}, ^{NSLog(@"blk0:%d",val);}, nil];
+    return [[NSArray alloc] initWithObjects:^{NSLog(@"blk0:%d",val);}, ^{NSLog(@"blk1:%d",val);}, ^{NSLog(@"blk2:%d",val);}, nil];
 }
 
 void exampleD() {
@@ -79,7 +79,7 @@ void exampleD() {
     NSArray *array = exampleD_getBlockArray();
     
     NSLog(@"array count = %ld", [array count]);
-    blk_t blk = (blk_t)[array objectAtIndex:1];
+    blk_t blk = (blk_t)[array objectAtIndex:0];
     
     blk();  // crash 野指针
 }
@@ -196,13 +196,15 @@ void exampleI() {
     
 
 int main(int argc, char * argv[]) {
-    exampleA();
-    exampleB();
-    exampleC();
-//    exampleD();
-    exampleE();
-    exampleF();
-    exampleG();
-    exampleH();
-    exampleI();
+    @autoreleasepool {
+        exampleA();
+        exampleB();
+        exampleC();
+//            exampleD();
+        exampleE();
+        exampleF();
+        exampleG();
+        exampleH();
+        exampleI();
+    }
 }
