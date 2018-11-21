@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  TestRuntime
+//  TestRunloop
 //
-//  Created by Shane on 2018/11/7.
+//  Created by Shane on 2018/11/21.
 //  Copyright © 2018 Shane. All rights reserved.
 //
 
@@ -16,10 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    
-    
-    
+    // Override point for customization after application launch.
     return YES;
 }
 

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34E0BB9021A40B1500B823D8 /* TestObjectDeallocProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0BB8F21A40B1500B823D8 /* TestObjectDeallocProcess.m */; };
+		34E0BB9321A40B4A00B823D8 /* TestSuperKeyWordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0BB9221A40B4A00B823D8 /* TestSuperKeyWordVC.m */; };
+		34E0BB9621A40B7700B823D8 /* TestObjecDeallocVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0BB9521A40B7700B823D8 /* TestObjecDeallocVC.m */; };
 		34FD543C2192E9660055A3E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD543B2192E9660055A3E0 /* AppDelegate.m */; };
 		34FD543F2192E9660055A3E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD543E2192E9660055A3E0 /* ViewController.m */; };
 		34FD54422192E9660055A3E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FD54402192E9660055A3E0 /* Main.storyboard */; };
@@ -16,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34E0BB8E21A40B1500B823D8 /* TestObjectDeallocProcess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObjectDeallocProcess.h; sourceTree = "<group>"; };
+		34E0BB8F21A40B1500B823D8 /* TestObjectDeallocProcess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObjectDeallocProcess.m; sourceTree = "<group>"; };
+		34E0BB9121A40B4A00B823D8 /* TestSuperKeyWordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSuperKeyWordVC.h; sourceTree = "<group>"; };
+		34E0BB9221A40B4A00B823D8 /* TestSuperKeyWordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSuperKeyWordVC.m; sourceTree = "<group>"; };
+		34E0BB9421A40B7700B823D8 /* TestObjecDeallocVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObjecDeallocVC.h; sourceTree = "<group>"; };
+		34E0BB9521A40B7700B823D8 /* TestObjecDeallocVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObjecDeallocVC.m; sourceTree = "<group>"; };
 		34FD54372192E9660055A3E0 /* TestRuntime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestRuntime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FD543A2192E9660055A3E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		34FD543B2192E9660055A3E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +76,12 @@
 				34FD54452192E9680055A3E0 /* LaunchScreen.storyboard */,
 				34FD54482192E9680055A3E0 /* Info.plist */,
 				34FD54492192E9680055A3E0 /* main.m */,
+				34E0BB9421A40B7700B823D8 /* TestObjecDeallocVC.h */,
+				34E0BB9521A40B7700B823D8 /* TestObjecDeallocVC.m */,
+				34E0BB8E21A40B1500B823D8 /* TestObjectDeallocProcess.h */,
+				34E0BB8F21A40B1500B823D8 /* TestObjectDeallocProcess.m */,
+				34E0BB9121A40B4A00B823D8 /* TestSuperKeyWordVC.h */,
+				34E0BB9221A40B4A00B823D8 /* TestSuperKeyWordVC.m */,
 			);
 			path = TestRuntime;
 			sourceTree = "<group>";
@@ -141,9 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34E0BB9321A40B4A00B823D8 /* TestSuperKeyWordVC.m in Sources */,
 				34FD543F2192E9660055A3E0 /* ViewController.m in Sources */,
 				34FD544A2192E9680055A3E0 /* main.m in Sources */,
 				34FD543C2192E9660055A3E0 /* AppDelegate.m in Sources */,
+				34E0BB9021A40B1500B823D8 /* TestObjectDeallocProcess.m in Sources */,
+				34E0BB9621A40B7700B823D8 /* TestObjecDeallocVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
