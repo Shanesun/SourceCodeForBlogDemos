@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34A92B7121CE67C4009DE554 /* AutoreleaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A92B7021CE67C4009DE554 /* AutoreleaseViewController.m */; };
 		34C03F0E213CE24500FEE37C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C03F0D213CE24500FEE37C /* AppDelegate.m */; };
 		34C03F11213CE24500FEE37C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C03F10213CE24500FEE37C /* ViewController.m */; };
 		34C03F14213CE24500FEE37C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C03F12213CE24500FEE37C /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34A92B6F21CE67C3009DE554 /* AutoreleaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoreleaseViewController.h; sourceTree = "<group>"; };
+		34A92B7021CE67C4009DE554 /* AutoreleaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoreleaseViewController.m; sourceTree = "<group>"; };
 		34C03F09213CE24500FEE37C /* ObjectMemeryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectMemeryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C03F0C213CE24500FEE37C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		34C03F0D213CE24500FEE37C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 				34C03F0D213CE24500FEE37C /* AppDelegate.m */,
 				34C03F0F213CE24500FEE37C /* ViewController.h */,
 				34C03F10213CE24500FEE37C /* ViewController.m */,
+				34A92B6F21CE67C3009DE554 /* AutoreleaseViewController.h */,
+				34A92B7021CE67C4009DE554 /* AutoreleaseViewController.m */,
 				34C03F12213CE24500FEE37C /* Main.storyboard */,
 				34C03F15213CE24800FEE37C /* Assets.xcassets */,
 				34C03F17213CE24800FEE37C /* LaunchScreen.storyboard */,
@@ -144,6 +149,7 @@
 				34C03F11213CE24500FEE37C /* ViewController.m in Sources */,
 				34C03F1C213CE24800FEE37C /* main.m in Sources */,
 				34C03F0E213CE24500FEE37C /* AppDelegate.m in Sources */,
+				34A92B7121CE67C4009DE554 /* AutoreleaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
