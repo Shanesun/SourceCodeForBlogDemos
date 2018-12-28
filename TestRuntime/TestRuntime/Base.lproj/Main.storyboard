@@ -66,6 +66,21 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g1w-ZL-RRT" id="qOe-QI-G4i">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhD-EI-51k">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                    <state key="normal" title="消息转发 Unrecoginer保护"/>
+                                                    <connections>
+                                                        <segue destination="VTu-IS-w9T" kind="show" id="7RS-cf-mUg"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nhD-EI-51k" firstAttribute="top" secondItem="qOe-QI-G4i" secondAttribute="top" id="7ws-qs-LRn"/>
+                                                <constraint firstAttribute="trailing" secondItem="nhD-EI-51k" secondAttribute="trailing" id="kh7-M9-d7e"/>
+                                                <constraint firstAttribute="bottom" secondItem="nhD-EI-51k" secondAttribute="bottom" id="sfx-f8-Yt8"/>
+                                                <constraint firstItem="nhD-EI-51k" firstAttribute="leading" secondItem="qOe-QI-G4i" secondAttribute="leading" id="wHn-n3-vyC"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bwm-gt-ujH">
@@ -88,7 +103,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfx-ob-Ktp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-57" y="-489"/>
+            <point key="canvasLocation" x="-58.399999999999999" y="-489.80509745127438"/>
         </scene>
         <!--Test Objec DeallocVC-->
         <scene sceneID="tne-QT-ifu">
@@ -104,6 +119,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="903" y="-770"/>
+        </scene>
+        <!--Test Msg ForwardingVC-->
+        <scene sceneID="Ua2-qA-X5Y">
+            <objects>
+                <viewController id="VTu-IS-w9T" customClass="TestMsgForwardingVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8wS-Qc-9kG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Bat-dR-eS4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1tr-dy-GkL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="-41"/>
         </scene>
     </scenes>
 </document>

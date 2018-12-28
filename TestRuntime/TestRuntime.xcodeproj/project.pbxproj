@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3414C2A921D5CED20051C03F /* NSObject+SSProtectUnrecognizedCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 3414C2A821D5CED20051C03F /* NSObject+SSProtectUnrecognizedCrash.m */; };
+		3414C2AC21D5CF250051C03F /* NSObject+SSSwizing.m in Sources */ = {isa = PBXBuildFile; fileRef = 3414C2AB21D5CF250051C03F /* NSObject+SSSwizing.m */; };
+		3414C2B021D5D1230051C03F /* TestMsgForwardingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3414C2AF21D5D1230051C03F /* TestMsgForwardingVC.m */; };
 		34E0BB9021A40B1500B823D8 /* TestObjectDeallocProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0BB8F21A40B1500B823D8 /* TestObjectDeallocProcess.m */; };
 		34E0BB9321A40B4A00B823D8 /* TestSuperKeyWordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0BB9221A40B4A00B823D8 /* TestSuperKeyWordVC.m */; };
 		34E0BB9621A40B7700B823D8 /* TestObjecDeallocVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0BB9521A40B7700B823D8 /* TestObjecDeallocVC.m */; };
@@ -19,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3414C2A721D5CED20051C03F /* NSObject+SSProtectUnrecognizedCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SSProtectUnrecognizedCrash.h"; sourceTree = "<group>"; };
+		3414C2A821D5CED20051C03F /* NSObject+SSProtectUnrecognizedCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SSProtectUnrecognizedCrash.m"; sourceTree = "<group>"; };
+		3414C2AA21D5CF250051C03F /* NSObject+SSSwizing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SSSwizing.h"; sourceTree = "<group>"; };
+		3414C2AB21D5CF250051C03F /* NSObject+SSSwizing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SSSwizing.m"; sourceTree = "<group>"; };
+		3414C2AE21D5D1230051C03F /* TestMsgForwardingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMsgForwardingVC.h; sourceTree = "<group>"; };
+		3414C2AF21D5D1230051C03F /* TestMsgForwardingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMsgForwardingVC.m; sourceTree = "<group>"; };
 		34E0BB8E21A40B1500B823D8 /* TestObjectDeallocProcess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObjectDeallocProcess.h; sourceTree = "<group>"; };
 		34E0BB8F21A40B1500B823D8 /* TestObjectDeallocProcess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObjectDeallocProcess.m; sourceTree = "<group>"; };
 		34E0BB9121A40B4A00B823D8 /* TestSuperKeyWordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSuperKeyWordVC.h; sourceTree = "<group>"; };
@@ -48,6 +57,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3414C2A421D5CDAA0051C03F /* TestSuperKeyWord */ = {
+			isa = PBXGroup;
+			children = (
+				34E0BB9121A40B4A00B823D8 /* TestSuperKeyWordVC.h */,
+				34E0BB9221A40B4A00B823D8 /* TestSuperKeyWordVC.m */,
+			);
+			path = TestSuperKeyWord;
+			sourceTree = "<group>";
+		};
+		3414C2A521D5CDCD0051C03F /* TestObjectDealloc */ = {
+			isa = PBXGroup;
+			children = (
+				34E0BB9421A40B7700B823D8 /* TestObjecDeallocVC.h */,
+				34E0BB9521A40B7700B823D8 /* TestObjecDeallocVC.m */,
+				34E0BB8E21A40B1500B823D8 /* TestObjectDeallocProcess.h */,
+				34E0BB8F21A40B1500B823D8 /* TestObjectDeallocProcess.m */,
+			);
+			path = TestObjectDealloc;
+			sourceTree = "<group>";
+		};
+		3414C2A621D5CDDE0051C03F /* TestMsgForward */ = {
+			isa = PBXGroup;
+			children = (
+				3414C2AD21D5D1000051C03F /* category */,
+				3414C2AE21D5D1230051C03F /* TestMsgForwardingVC.h */,
+				3414C2AF21D5D1230051C03F /* TestMsgForwardingVC.m */,
+			);
+			path = TestMsgForward;
+			sourceTree = "<group>";
+		};
+		3414C2AD21D5D1000051C03F /* category */ = {
+			isa = PBXGroup;
+			children = (
+				3414C2A721D5CED20051C03F /* NSObject+SSProtectUnrecognizedCrash.h */,
+				3414C2A821D5CED20051C03F /* NSObject+SSProtectUnrecognizedCrash.m */,
+				3414C2AA21D5CF250051C03F /* NSObject+SSSwizing.h */,
+				3414C2AB21D5CF250051C03F /* NSObject+SSSwizing.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
 		34FD542E2192E9660055A3E0 = {
 			isa = PBXGroup;
 			children = (
@@ -76,12 +126,9 @@
 				34FD54452192E9680055A3E0 /* LaunchScreen.storyboard */,
 				34FD54482192E9680055A3E0 /* Info.plist */,
 				34FD54492192E9680055A3E0 /* main.m */,
-				34E0BB9421A40B7700B823D8 /* TestObjecDeallocVC.h */,
-				34E0BB9521A40B7700B823D8 /* TestObjecDeallocVC.m */,
-				34E0BB8E21A40B1500B823D8 /* TestObjectDeallocProcess.h */,
-				34E0BB8F21A40B1500B823D8 /* TestObjectDeallocProcess.m */,
-				34E0BB9121A40B4A00B823D8 /* TestSuperKeyWordVC.h */,
-				34E0BB9221A40B4A00B823D8 /* TestSuperKeyWordVC.m */,
+				3414C2A521D5CDCD0051C03F /* TestObjectDealloc */,
+				3414C2A421D5CDAA0051C03F /* TestSuperKeyWord */,
+				3414C2A621D5CDDE0051C03F /* TestMsgForward */,
 			);
 			path = TestRuntime;
 			sourceTree = "<group>";
@@ -159,9 +206,12 @@
 				34E0BB9321A40B4A00B823D8 /* TestSuperKeyWordVC.m in Sources */,
 				34FD543F2192E9660055A3E0 /* ViewController.m in Sources */,
 				34FD544A2192E9680055A3E0 /* main.m in Sources */,
+				3414C2AC21D5CF250051C03F /* NSObject+SSSwizing.m in Sources */,
+				3414C2A921D5CED20051C03F /* NSObject+SSProtectUnrecognizedCrash.m in Sources */,
 				34FD543C2192E9660055A3E0 /* AppDelegate.m in Sources */,
 				34E0BB9021A40B1500B823D8 /* TestObjectDeallocProcess.m in Sources */,
 				34E0BB9621A40B7700B823D8 /* TestObjecDeallocVC.m in Sources */,
+				3414C2B021D5D1230051C03F /* TestMsgForwardingVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
