@@ -25,8 +25,7 @@ static BOOL NEUnrecognizedSelGuardEnabled = NO;
 
 void dynamicMethodIMP(id self, SEL _cmd)
 {
-    // 可以使用 使用第三发库 
-    //do nothing
+    // 可以使用 使用第三发库 PLCrashReporter 搜集调用堆栈信息。统一储存和上传。
 }
 
 + (BOOL)resolveInstanceMethod:(SEL)aSel
